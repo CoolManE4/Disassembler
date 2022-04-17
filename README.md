@@ -22,6 +22,18 @@ git clone https://github.com/CoolManE4/Disassembler.git
 
 After its installed you can compile it with a compiler of your choice. Since you're a Linux user I'm just going to assume you have this step figured out already.
 
+#### Mac
+
+```
+brew install git
+```
+
+```
+git clone https://github.com/CoolManE4/Disassembler.git
+```
+
+If I got this wrong don't be afraid to give feedback, I don't know alot about Mac.
+
 #### Windows
 
 First, you need to install Windows Subsystem for linux.
