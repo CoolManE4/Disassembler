@@ -1,9 +1,9 @@
 # Disassembler
 
 * [Why should I use this](#why-should-i-use-this)
-* [Setup] (#setup)
+* [Setup](#setup)
 * [How to use](#how-to-use)
-* [Changelong] (#changelog)
+* [Changelong](#changelog)
 
 # Why should I use this
 
