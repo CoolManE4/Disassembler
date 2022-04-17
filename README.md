@@ -94,4 +94,3 @@ prints to the console the disassembled code.
 
 Added getDigits, integerToArray, and to_string.
 Added toChar, and toAscii.
-Added instructions on how to install on Mac.
