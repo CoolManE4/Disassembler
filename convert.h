@@ -53,3 +53,15 @@ string to_string(int number) {
   
   return text;
 }
+
+char toChar(int ascii) {
+  char character = ascii;
+  
+  return character;
+}
+
+int toAscii(char character) {
+  int ascii = character;
+  
+  return ascii;
+}
