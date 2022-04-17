@@ -1,67 +1,28 @@
 #include <iostream>
 
-int getDigits(int integer) {
-  if (integer < 10) return 1;
-  if (integer < 100) return 2;
-  if (integer < 1000) return 3;
-  if (integer < 10000) return 4;
-  if (integer < 100000) return 5;
-  if (integer < 1000000) return 6;
-  if (integer < 10000000) return 7;
-  if (integer < 100000000) return 8;
-  if (integer < 1000000000) return 9;
-}
+// TODO: I need to add toHex function which will convert an integer to a hexadecimal value
+// I also need to add toOpcode which will convert a hexadecimal value over to an opcode
+// After that I need to add a function called toRegister that looks inside the hexadecimal to see if its eax,ebx,ecx,edx etc
+// I also need to add a arrayToString function which converts an array to a string like this array [1,0] would be converted into "10"
+// I also need to finish up the toAscii function
 
-int integerToArray(int integer) {
-  int array[256];
-  int digit = integer % 10;
-    
-  int i = 0;
-  
-  while (digit != 0) {
-    i++;
-    array[i] = digit;
-    digit = digit / 10;
-  }
-  
-  return array;
-}
+// HOW IT WILL WORK: it will work by turning the text inside the file to ASCII then to Hexadecimal
+// then after its been turned to hexadecimal it fires the toOpcode function and toRegister function on the text and they check if
+// the hexadecimal matches the hexadecimal of any opcodes or registers, if it doesn't then it leaves it alone, but if it does then it replaces
+// the hexadecimal that matches the opcode or register with the opcode or register it matches with
 
-string to_string(int number) {
-  string text = "";
+int toAscii(string text) {
+  int textLength = text.length();
   
-  int digits = getDigits(number);
-  
-  int digitArray = integerToArray(number);
+  int asciiArray[textLength];
   
   int i = 0;
   
-  while (i < digits) {
+  while (i < textLength) {
     i++;
     
-    if (digitArray[i] == 0) text = text + '0';
-    if (digitArray[i] == 1) text = text + '1';
-    if (digitArray[i] == 2) text = text + '2';
-    if (digitArray[i] == 3) text = text + '3';
-    if (digitArray[i] == 4) text = text + '4';
-    if (digitArray[i] == 5) text = text + '5';
-    if (digitArray[i] == 6) text = text + '6';
-    if (digitArray[i] == 7) text = text + '7';
-    if (digitArray[i] == 8) text = text + '8';
-    if (digitArray[i] == 9) text = text + '9';
+    int asciiChar = text[i];
+    
+    asciiArray[i] = asciiChar;
   }
-  
-  return text;
-}
-
-char toChar(int ascii) {
-  char character = ascii;
-  
-  return character;
-}
-
-int toAscii(char character) {
-  int ascii = character;
-  
-  return ascii;
 }
