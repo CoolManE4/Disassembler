@@ -90,6 +90,8 @@ prints to the console the disassembled code.
 
 # Changelog
 
-2:20 AM 4/17/2022
+4/17/2022
 
 Added getDigits, integerToArray, and to_string.
+Added toChar, and toAscii.
+Added instructions on how to install on Mac.
