@@ -77,3 +77,7 @@ disassemble [file-directory].asm
 prints to the console the disassembled code.
 
 # Changelog
+
+2:20 AM 4/17/2022
+
+Added getDigits, integerToArray, and to_string.
