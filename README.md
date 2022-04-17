@@ -7,7 +7,7 @@
 
 # Why should I use this
 
-at the moment theres not many exciting things to do with it, its just a project for fun. But later I'm planning for it to be able to disassemble exe files.
+at the moment theres not many exciting things to do with it, its just a project for fun.
 
 # Setup
 
