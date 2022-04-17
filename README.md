@@ -14,7 +14,7 @@ at the moment theres not many exciting things to do with it, its just a project 
 #### Step 1
 You must have Git for this to be installed. If you're a windows user you can install Windows Subsystem For Linux.
 
-###### Linux
+##### Linux
 
 ```
 git clone https://github.com/CoolManE4/Disassembler.git
@@ -22,7 +22,7 @@ git clone https://github.com/CoolManE4/Disassembler.git
 
 After its installed you can compile it with a compiler of your choice. Since you're a Linux user I'm just going to assume you have this step figured out already.
 
-###### Windows
+##### Windows
 
 First, you need to install Windows Subsystem for linux.
 
@@ -36,12 +36,12 @@ after its done installing you want to install a distro, you can do this by enter
 
 Once you have a Distro installed you need to enter the following commands based on your Distro ***DO NOT INSTALL KALI LINUX IT IS A DISTRO MEANT FOR PENETRATION TESTING YOU DO NOT NEED IT TO INSTALL THIS***
 
-# Ubuntu/Debian
+##### Ubuntu/Debian
 ```
 sudo apt install git
 ```
 
-# OpenSUSE Leap 42
+##### OpenSUSE Leap 42
 ```
 zypper install git
 ```
