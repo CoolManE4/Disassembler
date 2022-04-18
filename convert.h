@@ -8,6 +8,47 @@
 // the hexadecimal matches the hexadecimal of any opcodes or registers, if it doesn't then it leaves it alone, but if it does then it replaces
 // the hexadecimal that matches the opcode or register with the opcode or register it matches with
 
+class Opcodes {
+  public:
+    const int CALL_OPCODE;
+
+    const int PUSH_OPCODE;
+    const int POP_OPCODE;
+
+    const int INC_OPCODE;
+    const int DEC_OPCODE;
+    const int ADD_OPCODE;
+    const int SUB_OPCODE;
+};
+
+class Registers {
+  public:
+    const int EAX_REGISTER;
+    const int EBX_REGISTER;
+    const int ECX_REGISTER;
+    const int EDX_REGISTER
+  
+    const int AX_REGISTER;
+    const int BX_REGISTER;
+    const int CX_REGISTER;
+    const int DX_REGISTER;
+};
+
+string disassemble(string fileDirectory) {
+  ofstream file;
+  
+  file.open(fileDirectory);
+  
+  string fileText = file.read();
+  
+  string fileAscii = toAscii(fileText);
+  
+  string hexadecimal = toHex(fileAscii);
+  
+  toOpcode(hexadecimal);
+  toRegister(hexadecimal);
+}
+
 string arrayToString(int array) {
   string packedArray = "";
   
