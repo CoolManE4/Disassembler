@@ -11,6 +11,22 @@
 // the hexadecimal matches the hexadecimal of any opcodes or registers, if it doesn't then it leaves it alone, but if it does then it replaces
 // the hexadecimal that matches the opcode or register with the opcode or register it matches with
 
+string arrayToString(int array) {
+  string packedArray = "";
+  
+  int arrayLength = *(&array + 1) - array;
+  
+  int i = 0;
+  
+  while (i < arrayLength) {
+    packedArray = packedArray + to_string(array[i])
+      
+    i++;
+  }
+  
+  return packedArray;
+}
+
 int toAscii(string text) {
   int textLength = text.length();
   
@@ -18,11 +34,23 @@ int toAscii(string text) {
   
   int i = 0;
   
-  while (i < textLength) {
-    i++;
-    
+  while (i < textLength) { 
     int asciiChar = text[i];
     
     asciiArray[i] = asciiChar;
+    
+    i++;
   }
+  
+  string packedAsciiArray = arrayToString(asciiArray);
+  
+  return packedAsciiArray;
+}
+
+string toRegister(int hexadecimal) {
+}
+
+string toOpcode(int hexadecimal) {
+  if (hexadecimal == 0xCD80) return "int 0x80";
+  if (hexadecimal == 0x66B) return "mov";
 }
