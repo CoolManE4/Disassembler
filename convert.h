@@ -8,6 +8,8 @@
 // the hexadecimal matches the hexadecimal of any opcodes or registers, if it doesn't then it leaves it alone, but if it does then it replaces
 // the hexadecimal that matches the opcode or register with the opcode or register it matches with
 
+using namespace std;
+
 class Opcodes {
   public:
     const int CALL_OPCODE;
