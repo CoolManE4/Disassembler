@@ -2,6 +2,14 @@
 #include <string>
 
 // TODO: I need to add toHex function which will convert an integer to a hexadecimal value
+// finish the disassemble function
+
+// add Opcodes to Opcodes class
+
+// add Registers to Registers class
+
+// add replace_all function or get it from some other website so I can use it for the toOpcode and toRegister functions
+// because in C++ string.replace only replaces the first occurence of it
 
 // HOW IT WILL WORK: it will work by turning the text inside the file to ASCII then to Hexadecimal
 // then after its been turned to hexadecimal it fires the toOpcode function and toRegister function on the text and they check if
@@ -87,14 +95,8 @@ int toAscii(string text) {
   return packedAsciiArray;
 }
 
-string toRegister(int hexadecimal) {
-  if (hexadecimal == 0x80) return "eax";
-  if (hexadecimal == 0xB0) return "ebx";
-  if (hexadecimal == 0x90) return "ecx";
-  if (hexadecimal == 0xA0) return "edx";
+string toRegister(string hexadecimal) {
 }
 
-string toOpcode(int hexadecimal) {
-  if (hexadecimal == 0xCD80) return "int 0x80";
-  if (hexadecimal == 0x66B) return "mov";
+string toOpcode(string hexadecimal) {
 }
