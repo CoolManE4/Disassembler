@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // TODO: I need to add toHex function which will convert an integer to a hexadecimal value
 // I also need to add toOpcode which will convert a hexadecimal value over to an opcode
@@ -48,6 +49,10 @@ int toAscii(string text) {
 }
 
 string toRegister(int hexadecimal) {
+  if (hexadecimal == 0x80) return "eax";
+  if (hexadecimal == 0xB0) return "ebx";
+  if (hexadecimal == 0x90) return "ecx";
+  if (hexadecimal == 0xA0) return "edx";
 }
 
 string toOpcode(int hexadecimal) {
