@@ -1,5 +1,7 @@
 # Disassembler
 
+I am now allowing pull requests, my code is not perfect. But it can become alot better if other people improve and fix it, its still being made and it hasn't been tested yet, so its vulnerable to human flaw.
+
 * [Why should I use this](#why-should-i-use-this)
 * [Setup](#setup)
 * [How to use](#how-to-use)
