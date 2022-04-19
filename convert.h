@@ -4,6 +4,7 @@
 // TODO:
 
 // add Registers to Registers class
+// add getOccurences function for the replace_all function
 
 // HOW IT WILL WORK: it will work by turning the text inside the file to ASCII then to Hexadecimal
 // then after its been turned to hexadecimal it fires the toOpcode function and toRegister function on the text and they check if
