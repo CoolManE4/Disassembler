@@ -1,15 +1,9 @@
 #include <iostream>
 #include <string>
 
-// TODO: I need to add toHex function which will convert an integer to a hexadecimal value
-// finish the disassemble function
-
-// add Opcodes to Opcodes class
+// TODO:
 
 // add Registers to Registers class
-
-// add replace_all function or get it from some other website so I can use it for the toOpcode and toRegister functions
-// because in C++ string.replace only replaces the first occurence of it
 
 // HOW IT WILL WORK: it will work by turning the text inside the file to ASCII then to Hexadecimal
 // then after its been turned to hexadecimal it fires the toOpcode function and toRegister function on the text and they check if
@@ -122,12 +116,28 @@ string packStringArray(string array)
   return packedStringArray;
 }
 
-string replace_all(string text,string replaced,string replaceWith) {
+void replace_all(string text,string replaced,string replaceWith) {
   int position = getPosition(text,replaced);
   
   int begin = position[0];
   
   int end = position[1];
+  
+  int occcurencesOfReplaced = getOccurences(replaced);
+  
+  int i = 0;
+  
+  while (i < occurencesOfReplaced) {
+    str.replace(begin,end,replaceWith);
+    
+    position = getPosition(text,replaced);
+    
+    begin = position[0];
+    
+    end = position[1];
+    
+    i++;
+  }
 }
 
 int toAscii(string text) {
