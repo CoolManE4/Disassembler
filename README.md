@@ -74,7 +74,7 @@ You should see the Distro you have installed (if its open). Once you see it you 
 
 #### Step 2
 
-Next, you need to download NASM at https://nasm.us. After you have downloaded it and set it up, open `nasm-shell` and do ```nasm [file-directory].asm``` the file directory will be the x86 assembly file you want to disassemble. After that it will be compiled. Make sure you're using the default.
+Next, you need to download NASM at https://nasm.us. After you have downloaded it and set it up, open `nasm-shell` and do ```nasm [file-directory].asm``` the file directory will be the x86 assembly file you want to disassemble. After that it will be compiled. Make sure you're using the default file format which is bin.
 
 # How to use
 
