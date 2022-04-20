@@ -73,6 +73,18 @@ int reverseArray(int array[256]) {
   return reversedArray;
 }
 
+int getOccurences(string text,string inText) {
+  int textLength = text.length();
+  
+  int occurences = 0;
+  
+  int i = 0;
+  
+  while (i < textLength) {
+    i++;
+  }
+}
+
 int getPosition(string text,string findInText) {
   int length = findInText.length();
   
