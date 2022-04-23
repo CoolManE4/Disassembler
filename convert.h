@@ -4,7 +4,6 @@
 // TODO:
 
 // add Registers to Registers class
-// add getOccurences function for the replace_all function
 
 // HOW IT WILL WORK: it will work by turning the text inside the file to ASCII then to Hexadecimal
 // then after its been turned to hexadecimal it fires the toOpcode function and toRegister function on the text and they check if
@@ -76,11 +75,19 @@ int reverseArray(int array[256]) {
 int getOccurences(string text,string inText) {
   int textLength = text.length();
   
+  string fakeText = "";
+  
   int occurences = 0;
   
   int i = 0;
   
   while (i < textLength) {
+    if (fakeText.find(inText)) {
+      int position[2] = getPosition(fakeText,inText);
+      occurences++;
+      fakeText.replace(position[1],position[2],"");
+    }
+    
     i++;
   }
 }
@@ -227,4 +234,11 @@ string toRegister(string hexadecimal) {
 }
 
 string toOpcode(string hexadecimal) {
+  Opcodes Opcodes;
+  
+  if (hexadecimal.find(Opcodes.CALL_OPCODE)) replace_all(hexadecimal,Opcodes.CALL_OPCODE,"call");
+  if (hexadecimal.find(Opcodes.RET_OPCODE)) replace_all(hexadecimal,Opcodes.RET_OPCODE,"ret");
+  if (hexadecimal.find(Opcodes.INC_OR_DEC_OPCODE)) replace_all(hexadecimal,Opcodes.INC_OR_DEC_OPCODE,"inc/dec");
+  if (hexadecimal.find(Opcodes.ADD_OR_SUB_OPCODE)) replace_all(hexadecimal,Opcodes.ADD_OR_SUB_OPCODE,"add/sub");
+  if (hexadecimal.find(Opcodes.PUSH_OR_POP_OPCODE)) replace_all(hexadecimal,Opcodes.PUSH_OR_POP_OPCODE,"push/pop");
 }
