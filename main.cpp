@@ -1,10 +1,10 @@
 #include "convert.h"
 
 void doCommand(string command) {
-  if (command.find("disassemble")) {
+  if (command == "disassemble") {
     string fileName;
     
-    cout << "enter the file to disassemble" << "\n";
+    cout << "\n" << "enter the file to disassemble" << "\n";
     cin >> fileName;
     
     disassemble(fileName);
