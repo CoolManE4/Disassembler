@@ -103,7 +103,7 @@ Next, you need to download NASM at https://nasm.us. After you have downloaded it
 #### Commands
 
 ```
-disassemble [file-directory].asm
+disassemble
 ```
 
 prints to the console the disassembled code.
