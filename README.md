@@ -38,7 +38,25 @@ If I got this wrong don't be afraid to give feedback, I don't know alot about Ma
 
 #### Windows
 
-First, you need to install Windows Subsystem for linux.
+For windows you have two options, Git Bash and Windows Subsystem for Linux installation.
+
+#### Git Bash Installation
+
+Download Git Bash at https://git-scm.com/downloads
+
+then enter this command
+
+```
+git clone https://github.com/CoolManE4/Disassembler.git
+```
+
+then search for a file named Disassembler on your computer
+
+once you've found it compile it using a C++ compiler of your choice
+
+#### Windows Subsystem for Linux Installation **OPTIONAL**
+
+First, you need to install Windows Subsystem for Linux.
 
 Open Command Prompt then enter this command.
 
