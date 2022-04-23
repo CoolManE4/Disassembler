@@ -12,31 +12,34 @@
 
 using namespace std;
 
+// Classes
 class Opcodes {
   public:
-    const int CALL_OPCODE;
+    string CALL_OPCODE;
   
-    const int RET_OPCODE = "C3";
+    string RET_OPCODE = "C3";
 
-    const int PUSH_OR_POP_OPCODE = "665";
+    string PUSH_OR_POP_OPCODE = "665";
 
-    const int INC_OR_DEC_OPCODE = "664";
+    string INC_OR_DEC_OPCODE = "664";
   
-    const int ADD_OR_SUB_OPCODE = "6683";
+    string ADD_OR_SUB_OPCODE = "6683";
 };
 
 class Registers {
   public:
-    const int EAX_REGISTER;
-    const int EBX_REGISTER;
-    const int ECX_REGISTER;
-    const int EDX_REGISTER;
+    string EAX_REGISTER;
+    string EBX_REGISTER;
+    string ECX_REGISTER;
+    string EDX_REGISTER;
   
-    const int AX_REGISTER;
-    const int BX_REGISTER;
-    const int CX_REGISTER;
-    const int DX_REGISTER;
+    string AX_REGISTER;
+    string BX_REGISTER;
+    string CX_REGISTER;
+    string DX_REGISTER;
 };
+
+// Functions
 
 string disassemble(string fileDirectory) {
   ofstream file;
@@ -72,7 +75,7 @@ int reverseArray(int array[256]) {
   return reversedArray;
 }
 
-int getOccurences(string text,string inText) {
+int getOccurences(string text, string inText) {
   int textLength = text.length();
   
   string fakeText = "";
@@ -92,7 +95,7 @@ int getOccurences(string text,string inText) {
   }
 }
 
-int getPosition(string text,string findInText) {
+int getPosition(string text, string findInText) {
   int length = findInText.length();
   
   int begin = text.find(findInText);
